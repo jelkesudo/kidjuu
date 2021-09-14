@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
+@-webkit-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 90%;
+  }
+}
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@-webkit-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 90%;
+  }
+}
+
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 90%;
+  }
+}
+
+@-webkit-keyframes catnana {
+  0% {
+    background-image: url("catnana1.png");
+  }
+  20% {
+    background-image: url("catnana.png");
+  }
+  40% {
+    background-image: url("catnana1.png");
+  }
+  60% {
+    background-image: url("catnana.png");
+  }
+  80% {
+    background-image: url("catnana1.png");
+  }
+  100% {
+    background-image: url("catnana.png");
+  }
+}
+
+@keyframes catnana {
+  0% {
+    background-image: url("catnana1.png");
+  }
+  20% {
+    background-image: url("catnana.png");
+  }
+  40% {
+    background-image: url("catnana1.png");
+  }
+  60% {
+    background-image: url("catnana.png");
+  }
+  80% {
+    background-image: url("catnana1.png");
+  }
+  100% {
+    background-image: url("catnana.png");
+  }
+}
+
+@-webkit-keyframes pozadina {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes pozadina {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-webkit-keyframes slova {
+  25% {
+    text-shadow: 2px 2px 0 red, 4px 4px 0 blue, 6px 6px 0 green, 8px 8px 0 yellow;
+  }
+  50% {
+    text-shadow: 2px 2px 0 blue, 4px 4px 0 green, 6px 6px 0 yellow, 8px 8px 0 red;
+  }
+  75% {
+    text-shadow: 2px 2px 0 green, 4px 4px 0 yellow, 6px 6px 0 red, 8px 8px 0 blue;
+  }
+  100% {
+    text-shadow: 2px 2px 0 yellow, 4px 4px 0 red, 6px 6px 0 blue, 8px 8px 0 black;
+  }
+}
+
+@keyframes slova {
+  25% {
+    text-shadow: 2px 2px 0 red, 4px 4px 0 blue, 6px 6px 0 green, 8px 8px 0 yellow;
+  }
+  50% {
+    text-shadow: 2px 2px 0 blue, 4px 4px 0 green, 6px 6px 0 yellow, 8px 8px 0 red;
+  }
+  75% {
+    text-shadow: 2px 2px 0 green, 4px 4px 0 yellow, 6px 6px 0 red, 8px 8px 0 blue;
+  }
+  100% {
+    text-shadow: 2px 2px 0 yellow, 4px 4px 0 red, 6px 6px 0 blue, 8px 8px 0 black;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, p, li, a, i {
+  color: white;
+  text-shadow: 2px 2px 0 yellow, 4px 4px 0 red, 6px 6px 0 blue, 8px 8px 0 black;
+  -webkit-animation: slova 2s infinite;
+          animation: slova 2s infinite;
+}
+
+i {
+  font-size: 45px;
+  color: white;
+  text-shadow: 0.025px 0.025px 0 yellow, 2px 2px 0 red, 3px 3px 0 blue, 4px 4px 0 black;
+  -webkit-animation: slova 2s infinite;
+          animation: slova 2s infinite;
+}
+
+.p-right {
+  text-align: right;
+}
+
+.p-left {
+  text-align: left;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.catnana {
+  -webkit-animation: catnana 1.5s ease-out infinite;
+          animation: catnana 1.5s ease-out infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catnana .disclaimer {
+  width: 30%;
+  margin-top: 23%;
+  text-align: center;
+  background-color: black;
+}
+
+.catnana .disclaimer h1, .catnana .disclaimer p {
+  color: white;
+  padding-bottom: 15px;
+}
+
+.centerCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(106.31deg, #007A5C 0.04%, rgba(44, 79, 203, 0.49) 100%);
+  background-size: 500% 500%;
+  position: relative;
+  -webkit-animation: pozadina 10s ease-in-out infinite;
+          animation: pozadina 10s ease-in-out infinite;
+}
+
+main .homepage {
+  width: 80%;
+  height: 90vh;
+  margin: 0px auto;
+  text-align: center;
+}
+
+main .homepage h1 {
+  padding: 80px 0px;
+  font-size: 80px;
+}
+
+main .homepage p {
+  padding: 30px 0px;
+  font-size: 30px;
+}
+
+main .button {
+  width: 40%;
+  margin: 70px auto;
+  padding: 30px 0px;
+  background-color: #055555;
+  border-radius: 25px;
+  text-align: center;
+}
+
+main .button p {
+  text-shadow: none;
+}
+
+main .button:hover {
+  -webkit-transform: translate(0px, -20px);
+          transform: translate(0px, -20px);
+  width: 30%;
+  background-color: #007a5c;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+main .question {
+  width: 80%;
+  margin: 0px auto;
+}
+
+main .question h1 {
+  font-size: 70px;
+  padding: 100px 0px;
+  padding-bottom: 50px;
+}
+
+main .options {
+  width: 85%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 250px 0px;
+}
+
+main .options .option, main .options .restaurant {
+  width: 30%;
+  text-align: center;
+}
+
+main .options .option {
+  font-size: 50px;
+}
+
+main .options .option1 {
+  width: 50%;
+  font-size: 50px;
+  text-align: center;
+}
+
+main .options .gone:hover {
+  cursor: default;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .optionsRestaurants {
+  width: 85%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0px;
+}
+
+main .optionsRestaurants .restaurant {
+  width: 30%;
+  position: relative;
+}
+
+main .optionsRestaurants .restaurant img {
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 25px;
+  height: 100%;
+}
+
+main .optionsRestaurants .restaurant .middle {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  border-radius: 25px;
+  opacity: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .optionsRestaurants .restaurant .info {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .optionsRestaurants .restaurant:hover .middle {
+  display: block;
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .optionsRestaurants .restaurant:hover .info {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .optionsRestaurants .restaurant:hover .info p {
+  padding: 25%;
+}
+
+main .optionsRestaurants .restaurant img {
+  border-radius: 25px;
+}
+
+.backButton {
+  position: absolute;
+  z-index: 9;
+  top: 20px;
+  left: 20px;
+}
+
+.jok:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.odgovor {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("../img/yay.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.odgovor .pola {
+  text-align: center;
+  width: 50%;
+}
+
+.odgovor .pola h1, .odgovor .pola h2, .odgovor .pola p {
+  color: black;
+  -webkit-animation: none;
+          animation: none;
+  text-shadow: none;
+}
+
+.odgovor .pola h1 {
+  padding-bottom: 100px;
+  font-size: 60px;
+}
+
+.odgovor .pola h2 {
+  padding: 100px 0px;
+  font-size: 30px;
+}
+
+.odgovor .pola p {
+  font-size: 40px;
+  padding-bottom: 100px;
+}
+
+.odgovor .pola .pocetak {
+  width: 30%;
+  margin: 0px auto;
+  padding: 50px 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*# sourceMappingURL=style.css.map */
